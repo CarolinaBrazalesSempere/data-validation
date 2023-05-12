@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<biblioteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+            xsi:noNamespaceSchemaLocation= "biblioteca_XSD.xsd" >
+
+ <libros>
+        <libro id="L1234" tipo_clase="novela" num_paginas="400">
+            <titulo>La casa de los espíritus</titulo>
+            <indice/>
+            <capitulos>
+                <capitulo num_paginas="30">
+                    <titulo_capitulo>Capítulo 1</titulo_capitulo>
+                    <contenido link="https://www.casadellibro.com/libro-la-casa-de-los-espiritus/9788483462034/1105138"/>
+                </capitulo>
+                <capitulo num_paginas="25">
+                    <titulo_capitulo>Capítulo 2</titulo_capitulo>
+                    <contenido link="https://www.casadellibro.com/libro-la-casa-de-los-espiritus/9788483462034/1105138"/>
+                </capitulo>
+            </capitulos>
+            <sinopsis>Una poderosa saga familiar que abarca varias generaciones, entrelazando amores, tragedias y luchas políticas en un contexto histórico tumultuoso.</sinopsis>
+        </libro>
+
+        <libro id="L5678" tipo_clase="didactico" num_paginas="496">
+            <titulo>Sapiens</titulo>
+            <indice/>
+            <capitulos>
+                <capitulo num_paginas="20">
+                    <titulo_capitulo>Capítulo 1</titulo_capitulo>
+                    <contenido link="https://www.casadellibro.com/libro-sapiens-de-animales-a-dioses/9788499926223/2655217"/>
+                </capitulo>
+                <capitulo num_paginas="15">
+                    <titulo_capitulo>Capítulo 2</titulo_capitulo>
+                    <contenido link="https://www.casadellibro.com/libro-sapiens-de-animales-a-dioses/9788499926223/2655217"/>
+                </capitulo>
+            </capitulos>
+            <sinopsis>En Sapiens, Yuval Noah Harari traza una breve historia de la humanidad, desde los primeros humanos que caminaron sobre la Tierra hasta los radicales y a veces devastadores avances de las tres grandes revoluciones que nuestra especie ha protagonizado: la cognitiva, la agrícola y la científica.</sinopsis>
+        </libro>
+
+        <libro id="L9012" tipo_clase="infantil" num_paginas="160">
+            <titulo>Kika Superbruja en busca del tesoro</titulo>
+            <indice/>
+            <capitulos>
+                <capitulo num_paginas="5">
+                    <titulo_capitulo>Capítulo 1</titulo_capitulo>
+                    <contenido link="https://www.casadellibro.com/libro-kika-superbruja-en-busca-del-tesoro/9788421692622/924213"/>
+                </capitulo>
+                <capitulo num_paginas="7">
+                    <titulo_capitulo>Capítulo 2</titulo_capitulo>
+                    <contenido link="https://www.casadellibro.com/libro-kika-superbruja-en-busca-del-tesoro/9788421692622/924213"/>
+                </capitulo>
+            </capitulos>
+            <sinopsis>Al leer en voz alta su libro de magia, ¡Kika Superbruja aparece en mitad de la selva! En esta aventura tendrá que descubrir el secreto del misterioso oráculo que la llevará a través de las Aguas Rientes hasta el fabuloso tesoro del Rey Cocodrilo. </sinopsis>
+        </libro>
+    </libros> 
+
+    <periodicos>
+        <periodico id="P5678" tipo_clase="nacional" fech_publi="2023-05-01">
+            <indice/>
+            <secciones>
+                <seccion id_seccion="economica">
+                    <articulo id_autor="A1234">Economía sostenible y de proximidad.</articulo>
+                    <contenido link="https://elpais.com/retina/2020/12/03/tendencias/1607020273_323494.html"/>
+                </seccion>
+                <seccion id_seccion="opinion">
+                    <articulo id_autor="A5678">Valencia será capital verde euorpea en 2024</articulo>
+                    <contenido link="https://elpais.com/clima-y-medio-ambiente/2022-10-27/valencia-sera-capital-verde-europea-en-2024.html"/>
+                </seccion>
+            </secciones>
+        </periodico>
+
+        <periodico id="P9012" tipo_clase="internacional" fech_publi="2023-05-02">
+            <indice/>
+            <secciones>
+                <seccion id_seccion="deportes">
+                    <articulo id_autor="A9012">Resumen de los resultados deportivos: el Valencia Femenino gana la Liga.</articulo>
+                    <contenido link="https://as.com/futbol/2021/06/07/mas_futbol/1623069079_291365.html"/>
+                </seccion>
+                <seccion id_seccion="nacional">
+                    <articulo id_autor="A3456">El gobierno pone freno a la subida de los alquileres.</articulo>
+                    <contenido link="https://valenciaplaza.com/compromis-pspv-pediran-valencia-zona-tensionada"/>
+                </seccion>
+            </secciones>
+        </periodico>
+    </periodicos>
+
+    <revistas>
+        <revista id="R1" tipo_clase="informatica" num_paginas="50">
+            <titulo>Computer hoy</titulo>
+            <num_revista>123</num_revista>
+            <indice/>
+                <secciones>
+                    <seccion num_paginas="10">
+                        <contenido link="https://computerhoy.com/life/grave-error-casi-todo-mundo-comete-wifi-salir-casa-1233598"/>
+                    </seccion>
+                </secciones>
+        </revista>
+
+        <revista id="R2" tipo_clase="investigacion" num_paginas="40">
+            <titulo>Revista de Filología Española</titulo>
+            <num_revista>456</num_revista>
+            <indice/>
+            <secciones>
+                <seccion num_paginas="5">
+                    <contenido link="https://xn--revistadefilologiaespaola-uoc.revistas.csic.es/index.php/rfe/article/view/1322"/>
+                </seccion>
+            </secciones>
+        </revista>
+
+        <revista id="R3" tipo_clase="coches" num_paginas="60">
+            <titulo>Motorpasión</titulo>
+            <num_revista>789</num_revista>
+            <indice/>
+            <secciones>
+                <seccion num_paginas="12">
+                    <contenido link="https://www.motorpasion.com/compra-coches/peugeot-e-2008-2023-precio"/>
+                </seccion>
+            </secciones>
+        </revista>
+    </revistas>
+</biblioteca>

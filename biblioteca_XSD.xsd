@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+
+<schema xmlns="http://www.w3.org/2001/XMLSchema">
+    <annotation>
+        <documentation>
+          Esquema que marca la estructura de una biblioteca en línea.
+         </documentation>
+    </annotation>
+
+    <element name="biblioteca">
+        <complexType>
+            <sequence>
+                <element name="libros">
+                  <complexType>
+                        <sequence>
+                            <element name="libro">
+                            <complexType>
+                                <sequence>
+                                    <element name="titulo" type="string"/>
+                                    <element name="indice" type="string"/>
+                                    <element name="capitulos">
+                                    <complexType>
+                                        <sequence>
+                                            <element name="capitulo">
+                                                <complexType>
+                                                        <sequence>
+                                                            <element name="titulo_capitulo" type="string"/>
+                                                            <element name="contenido"/>
+                                                            <attribute name="link" type="string"></attribute>
+                                                        </sequence>
+                                                </complexType>
+                                            </element>
+                                            <attribute name="num_paginas" type="integer"></attribute>
+                                        </sequence>
+                                    </complexType>
+                                    </element>
+                                    <element name="sinopsis" type="string"/>
+                                </sequence>
+                            </complexType>
+                            </element>
+                            <attribute name="id" type="string" use="required"></attribute>
+                            <attribute name="tipo_clase" type="string" use="required"></attribute>
+                            <attribute name="num_paginas" type="integer"></attribute>
+                        </sequence>
+                   </complexType>
+                </element>
+
+                
+        <element name="periodicos">
+            <complexType>
+                <sequence>
+                    <element name="periodico">
+                        <complexType>
+                            <sequence>
+                                <element name="indice" type="string"/>
+                                <element name="secciones">
+                                    <complexType>
+                                        <sequence>
+                                            <element name="seccion">
+                                                <complexType>
+                                                    <sequence>
+                                                        <element name="articulo" type="string"/>
+                                                        <element name="contenido"/>
+                                                    </sequence>
+                                                    <attribute name="link" type="string"/>
+                                                </complexType>
+                                            </element>
+                                        </sequence>
+                                    </complexType>
+                                </element>
+                            </sequence>
+                        </complexType>
+                    </element>
+                </sequence>
+                <attribute name="id" type="string" use="required"/>
+                <attribute name="tipo_clase" type="string" use="required"/>
+                <attribute name="fecha_publi" type="date"/>
+            </complexType>
+        </element>
+
+        <element name="revistas">
+            <complexType>
+                <sequence>
+                    <element name="revista">
+                        <complexType>
+                            <sequence>
+                                <element name="titulo" type="string"/>
+                                <element name="num_revista" type="integer"/>
+                                <element name="indice"/>
+                                <element name="secciones">
+                                    <complexType>
+                                        <sequence>
+                                            <element name="seccion">
+                                                <complexType>
+                                                    <sequence>
+                                                        <element name="contenido"/>
+                                                    </sequence>
+                                                    <attribute name="link" type="string"/>
+                                                </complexType>
+                                            </element>
+                                        </sequence>
+                                    </complexType>
+                                </element>
+                            </sequence>
+                        </complexType>
+                    </element>
+                </sequence>
+                <attribute name="id" type="string" use="required"/>
+                <attribute name="tipo_clase" type="string" use="required"/>
+                <attribute name="num_paginas" type="integer"/>
+            </complexType>
+        </element>            
+</schema>
