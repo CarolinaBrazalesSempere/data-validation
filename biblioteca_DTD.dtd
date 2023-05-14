@@ -8,6 +8,7 @@
 
 <!ELEMENT capitulos (capitulo*)>
 <!ELEMENT capitulo (titulo_capitulo, contenido)>
+<!ELEMENT titulo_capitulo #PCDATA>
 
 <!--Atributos libro-->
 <!ATTLIST libro 
