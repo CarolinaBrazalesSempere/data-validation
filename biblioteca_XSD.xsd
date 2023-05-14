@@ -13,7 +13,7 @@
                 <element name="libros">
                   <complexType>
                         <sequence>
-                            <element name="libro">
+                            <element name="libro"  maxOccurs="unbounded">
                             <complexType>
                                 <sequence>
                                     <element name="titulo" type="string"/>
@@ -21,7 +21,7 @@
                                     <element name="capitulos">
                                     <complexType>
                                         <sequence>
-                                            <element name="capitulo">
+                                            <element name="capitulo"  maxOccurs="unbounded">
                                                 <complexType>
                                                         <sequence>
                                                             <element name="titulo_capitulo" type="string"/>
@@ -49,14 +49,14 @@
         <element name="periodicos">
             <complexType>
                 <sequence>
-                    <element name="periodico">
+                    <element name="periodico"  maxOccurs="unbounded">
                         <complexType>
                             <sequence>
                                 <element name="indice" type="string"/>
                                 <element name="secciones">
                                     <complexType>
                                         <sequence>
-                                            <element name="seccion">
+                                            <element name="seccion"  maxOccurs="unbounded">
                                                 <complexType>
                                                     <sequence>
                                                         <element name="articulo" type="string"/>
@@ -81,7 +81,7 @@
         <element name="revistas">
             <complexType>
                 <sequence>
-                    <element name="revista">
+                    <element name="revista"  maxOccurs="unbounded">
                         <complexType>
                             <sequence>
                                 <element name="titulo" type="string"/>
@@ -90,7 +90,7 @@
                                 <element name="secciones">
                                     <complexType>
                                         <sequence>
-                                            <element name="seccion">
+                                            <element name="seccion"  maxOccurs="unbounded">
                                                 <complexType>
                                                     <sequence>
                                                         <element name="contenido"/>
